@@ -11,6 +11,10 @@
         function LoadHome(){
             UnloadPage();
 
+            let accueil = document.createElement("p");
+            accueil.innerHTML = "Page d'accueil<br/><br/>";
+            mainAppElement.append(accueil);
+
             let textButton = document.createElement("span");
             textButton.classList.add("textButton");
             textButton.classList.add("menuButton");
@@ -23,7 +27,7 @@
             UnloadPage();
 
             let textos = document.createElement("p");
-            textos.innerHTML = "Blablabla";
+            textos.innerHTML = "Page des textos<br/><br/>Maman: Où est-tu?<br/><br/>???: Viens à l'addresse suivante: blablabla.";
             mainAppElement.append(textos);
         }
 
