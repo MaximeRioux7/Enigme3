@@ -3,7 +3,7 @@
 
         let mainAppElement = document.querySelector(".main-app");
 
-        document.querySelector(".menu-circle").addEventListener("click", LoadHome);
+        document.querySelector(".menu-circle").parentElement.addEventListener("click", LoadHome);
 
         LoadHome();
         console.log("test");
