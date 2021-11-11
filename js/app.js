@@ -14,14 +14,14 @@ import texts from "../data/enigme3.js";
 
             let accueilContainer = document.createElement("div");
             accueilContainer.classList.add("app-window");
+            accueilContainer.classList.add("accueil");
 
             let accueil = document.createElement("p");
-            accueil.innerHTML = "Page d'accueil<br/><br/>";
 
             let textButton = document.createElement("span");
             textButton.classList.add("textButton");
             textButton.classList.add("menuButton");
-            textButton.innerHTML = "<span>Textos</span>";
+            textButton.innerHTML = "<span><i class=\"fas fa-sms\"></i><p class=\"desc\">Messagerie</p></span>";
             textButton.addEventListener("click", ()=>{
                 LoadTexts(null);
             });
@@ -79,7 +79,7 @@ import texts from "../data/enigme3.js";
                     });
                     break;
                 default:
-                    UpdateBackButton(LoadTexts)
+                    UpdateBackButton(LoadTexts);
                     Object.entries(texts[page]).forEach(entry => {
                         const [key, value] = entry;
                         let textElement = document.createElement("p");
@@ -93,7 +93,7 @@ import texts from "../data/enigme3.js";
             }
         }
 
-        function UpdateBackButton(args){
+        function UpdateBackButton(){
             let button = document.querySelector(".menu-arrow");
             button.parentElement.replaceWith(button.parentElement.cloneNode(true));
 
@@ -106,20 +106,3 @@ import texts from "../data/enigme3.js";
         }
     });
 })();
-
-/*
-
-let button = document.querySelector(".menu-arrow");
-let buttonClone = button.cloneNode(true);
-
-let func = Array.prototype.shift.apply(arguments);
-
-button.parentNode.replaceChild(buttonClone, button);
-
-button = buttonClone;
-button.parentElement.addEventListener("click", ()=>{
-    console.log(arguments[0]);
-    func.apply(arguments);
-});
-
-*/

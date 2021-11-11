@@ -1,19 +1,20 @@
 export default {
     "Maman": [
-        ["allo", false],
-        ["bonsoir", false],
-        ["message envoyé", true]
+        ["allo"],
+        ["bonsoir"],
+        ["message envoyé", true],
+        ["bonne nuit"]
     ],
     "&lt Anonyme &gt": [
-        ["allo2", false],
-        ["bonsoir2", false]
+        ["allo2"],
+        ["bonsoir2"]
     ],
     "Ami1": [
-        ["allo2", false],
-        ["bonsoir2", false]
+        ["allo2"],
+        ["bonsoir2"]
     ],
     "Papa": [
-        ["allo2", false],
-        ["bonsoir2", false]
+        ["allo2"],
+        ["bonsoir2"]
     ]
 }

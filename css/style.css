@@ -43,6 +43,11 @@ html{
     cursor: default;
 }
 
+.app > .top-bar i{
+    margin-left: 10px;
+    transform: translateY(1px);
+}
+
 /* =======================================================================
     BOTTOM BAR
 ======================================================================= */
@@ -98,6 +103,13 @@ html{
     position: relative;
 }
 
+.accueil{
+    padding: 30px;
+    box-sizing: border-box;
+    height: 574px;
+    background-color: #0AC;
+}
+
 .menuButton{
     position: relative;
     width: 48px;
@@ -105,10 +117,22 @@ html{
     cursor: pointer;
     display: inline-block;
     color: white;
-    background-color: #1AF;
     padding: 10px;
-    border-radius: 6px;
-    border: 2px solid #ACD;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.menuButton i{
+    font-size: 48px;
+}
+
+.menuButton .desc{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 12px);
+    pointer-events: none;
 }
 
 .menuButton > span{
@@ -121,7 +145,7 @@ html{
 }
 
 .menuButton:hover{
-    background-color: #2BF;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* =======================================================================
