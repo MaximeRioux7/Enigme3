@@ -5,6 +5,7 @@ import texts from "../data/enigme3.js";
         let mainAppElement = document.querySelector(".main-app");
 
         document.querySelector(".menu-circle").parentElement.addEventListener("click", LoadHome);
+        document.querySelector(".menu-arrow").parentElement.addEventListener("click", LoadHome);
 
         LoadHome();
 
@@ -62,6 +63,7 @@ import texts from "../data/enigme3.js";
         function LoadTextPage(page = null, meta){
             switch(page){
                 case null:
+                    UpdateBackButton(LoadHome);
                     Object.entries(texts).forEach(entry => {
                         const [key, value] = entry;
                         let textElement = document.createElement("div");
@@ -77,9 +79,11 @@ import texts from "../data/enigme3.js";
                     });
                     break;
                 default:
+                    UpdateBackButton(LoadTexts)
                     Object.entries(texts[page]).forEach(entry => {
                         const [key, value] = entry;
                         let textElement = document.createElement("p");
+
                         if(value[1]) textElement.classList.add("self");
                         textElement.innerHTML = value[0];
                         
@@ -88,5 +92,34 @@ import texts from "../data/enigme3.js";
                     break;
             }
         }
+
+        function UpdateBackButton(args){
+            let button = document.querySelector(".menu-arrow");
+            button.parentElement.replaceWith(button.parentElement.cloneNode(true));
+
+            let func = Array.prototype.shift.apply(arguments);
+
+            button = document.querySelector(".menu-arrow");
+            button.parentElement.addEventListener("click", ()=>{
+                func.apply(this, arguments);
+            });
+        }
     });
 })();
+
+/*
+
+let button = document.querySelector(".menu-arrow");
+let buttonClone = button.cloneNode(true);
+
+let func = Array.prototype.shift.apply(arguments);
+
+button.parentNode.replaceChild(buttonClone, button);
+
+button = buttonClone;
+button.parentElement.addEventListener("click", ()=>{
+    console.log(arguments[0]);
+    func.apply(arguments);
+});
+
+*/
