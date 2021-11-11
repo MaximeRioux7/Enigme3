@@ -19,6 +19,8 @@ html{
 .app-container{
     position: relative;
     width:100%;
+    
+    position: relative;
 }
 
 .app{
@@ -37,16 +39,22 @@ html{
     padding: 5px 10px;
     background-color: black;
     color: white;
+    
+    cursor: default;
 }
 
+/* =======================================================================
+    BOTTOM BAR
+======================================================================= */
+
 .app > .bottom-bar{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
 
-    bottom: 0;
+    /*bottom: 0;*/
 
     padding: 0px 10px;
     background-color: black;
@@ -81,7 +89,9 @@ html{
 }
 
 .main-app{
-    padding: 10px;
+    height: 574px;
+    width: 100%;
+    position: relative;
 }
 
 .menuButton{
@@ -108,4 +118,52 @@ html{
 
 .menuButton:hover{
     background-color: #2BF;
+}
+
+/* =======================================================================
+    TEXTOS
+======================================================================= */
+
+.texts-app{
+    overflow-y: auto;
+    height: 100%;
+    background-color: #DDD;
+}
+
+.texts-app .texts-bar{
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgba(255, 210, 0);
+    color: white;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.texts-app .recipient{
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+
+    transition: background-color 0.1s;
+}
+
+.texts-app .recipient:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.texts-app p{
+    background-color: white;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.texts-app p.self{
+    background-color: #DDEEFF;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
