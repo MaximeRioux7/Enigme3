@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@400;700&display=swap');
 
 /* =======================================================================
     BASE
@@ -9,7 +10,8 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, ul, li{
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
 }
 
 /* =======================================================================
@@ -45,7 +47,7 @@ html{
 
 .app > .top-bar i{
     margin-left: 10px;
-    transform: translateY(1px);
+    transform: translateY(3px);
 }
 
 /* =======================================================================
@@ -110,14 +112,6 @@ html{
     transition: text-shadow 0.3s;
 }
 
-/*.bar-button:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.bar-button:active{
-    background-color: rgba(255, 255, 255, 0.3);
-}*/
-
 .bar-button:hover i{
     text-shadow: 0 0 15px white;
 }
@@ -134,6 +128,7 @@ html{
 
 .accueil{
     padding: 30px;
+    padding-top: 0;
     box-sizing: border-box;
     height: 574px;
     background-color: #0AC;
@@ -141,14 +136,16 @@ html{
 
 .menuButton{
     position: relative;
+    display: inline-block;
     width: 48px;
     height: 48px;
     cursor: pointer;
-    display: inline-block;
     color: white;
     padding: 10px;
     border-radius: 10px;
     transition: background-color 0.2s;
+    margin: 0 3.5px;
+    margin-top: 30px;
 }
 
 .menuButton i{
@@ -177,6 +174,14 @@ html{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.menuButton i{
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.fa-firefox{
+    color: #ffAA00;
+}
+
 /* =======================================================================
     TEXTOS
 ======================================================================= */
@@ -188,6 +193,7 @@ html{
 }
 
 .texts-app .texts-bar{
+    cursor: default;
     padding: 10px;
     font-size: 22px;
     background-color: rgba(255, 180, 0);
@@ -223,6 +229,91 @@ html{
     padding: 10px;
     border-radius: 10px;
 }
+
+/* =======================================================================
+    BROWSER
+======================================================================= */
+
+.browser-app{
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #334;
+}
+
+.browser-bar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #223;
+    width: 100%;
+}
+
+.browser-bar .icon{
+    padding: 5px;
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.nav-bar{
+    flex: 1 1 0;
+
+    cursor: default;
+    color: #5A5A70;
+    background-color: #11111A;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 10px 5px 10px 0;
+}
+
+.burger-button{
+    flex-basis: 0 0 1;
+
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 5px 10px 5px 0;
+    
+    padding: 5px;
+    border-radius: 7px;
+    transition: background-color 0.1s;
+}
+
+.burger-button i{
+    transform: translateY(-5px);
+}
+
+.burger-button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.browser-content{
+    cursor: default;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    color: #EEE;
+    font-size: 18px;
+}
+
+.browser-content i{
+    margin-top: 30px;
+    font-size: 150px;
+    color: #000;
+    opacity: 0.2;
+}
+
+/* =======================================================================
+    OTHER
+======================================================================= */
 
 .no-display{
     opacity: 0 !important;

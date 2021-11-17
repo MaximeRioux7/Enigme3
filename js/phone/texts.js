@@ -1,6 +1,6 @@
 import * as Main from "./main.js";
 import * as Home from "./home.js";
-import texts from "../../data/enigme3.js";
+import {texts} from "../../data/enigme3.js";
 
 export function Load(page = null){
     Main.UnloadPage();

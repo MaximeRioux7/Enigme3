@@ -1,26 +1,39 @@
 import * as Main from "./main.js";
 import * as Home from "./home.js";
 import * as Texts from "./texts.js";
+import * as Browser from "./browser.js";
 
 export function Load(){
     Main.UpdateBackButton(Home.Load);
     Main.UnloadPage();
 
-    let accueilContainer = document.createElement("div");
-    accueilContainer.classList.add("app-window");
-    accueilContainer.classList.add("accueil");
+    let homeContainer = document.createElement("div");
+    homeContainer.classList.add("app-window");
+    homeContainer.classList.add("accueil");
 
-    let accueil = document.createElement("p");
+    AddHomeIcons(homeContainer);
 
-    let textButton = document.createElement("span");
-    textButton.classList.add("textButton");
-    textButton.classList.add("menuButton");
-    textButton.innerHTML = "<span><i class=\"fas fa-sms\"></i><p class=\"desc\">Messagerie</p></span>";
-    textButton.addEventListener("click", ()=>{
+    Main.appElement.append(homeContainer);
+}
+
+function AddHomeIcons(homeContainer){
+    // Texts
+    let icon = document.createElement("span");
+    icon.classList.add("textButton");
+    icon.classList.add("menuButton");
+    icon.innerHTML = "<span><i class=\"fas fa-sms\"></i><p class=\"desc\">Messagerie</p></span>";
+    icon.addEventListener("click", ()=>{
         Texts.Load(null);
     });
+    homeContainer.append(icon);
 
-    accueilContainer.append(accueil);
-    accueilContainer.append(textButton)
-    Main.appElement.append(accueilContainer);
+    // Firefox
+    icon = document.createElement("span");
+    icon.classList.add("textButton");
+    icon.classList.add("menuButton");
+    icon.innerHTML = "<span><i class=\"fab fa-firefox\"></i><p class=\"desc\">Firefox</p></span>";
+    icon.addEventListener("click", ()=>{
+        Browser.Load();
+    });
+    homeContainer.append(icon);
 }
