@@ -70,26 +70,55 @@ html{
 .bar-button{
     position: relative;
     display: block;
-    padding: 6px 28px;
+    padding: 6px 0;
+    width: 80px;
+    height: 24px;
     border-radius: 18px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
-.bar-button > i{
+.bar-button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 0%;
+    border-radius: 18px;
+    transition: width 0.2s, background-color 0.2s;
+}
+
+.bar-button:hover::before{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.bar-button:active::before{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.bar-button i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
     font-size: 24px;
+    transform: translate(-50%, -50%);
     transition: text-shadow 0.3s;
 }
 
-.bar-button:hover{
+/*.bar-button:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .bar-button:active{
     background-color: rgba(255, 255, 255, 0.3);
-}
+}*/
 
-.bar-button:hover > i{
+.bar-button:hover i{
     text-shadow: 0 0 15px white;
 }
 
