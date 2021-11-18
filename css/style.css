@@ -131,7 +131,7 @@ html{
     padding-top: 0;
     box-sizing: border-box;
     height: 574px;
-    background-color: #0AC;
+    background-image: url("../img/wallpaper.png");
 }
 
 .menuButton{
