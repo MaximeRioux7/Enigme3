@@ -187,9 +187,13 @@ html{
 ======================================================================= */
 
 .texts-app{
-    overflow-y: auto;
     height: 100%;
     background-color: #DDD;
+}
+
+.texts-container{
+    overflow-y: auto;
+    height: calc(100% - 50px);
 }
 
 .texts-app .texts-bar{
@@ -220,6 +224,7 @@ html{
     margin-right: 100px;
     padding: 10px;
     border-radius: 10px;
+    word-break: break-word;
 }
 
 .texts-app p.self{

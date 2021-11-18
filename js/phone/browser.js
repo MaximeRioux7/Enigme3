@@ -1,7 +1,8 @@
 import * as Main from "./main.js";
 import * as Home from "./home.js";
+import * as Data from "./data.js";
 
-import {browser} from "../../data/enigme3.js";
+let browser = Data.Get().browser;
 
 let menuButton;
 

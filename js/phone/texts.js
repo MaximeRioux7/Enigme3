@@ -1,6 +1,8 @@
 import * as Main from "./main.js";
 import * as Home from "./home.js";
-import {texts} from "../../data/enigme3.js";
+import * as Data from "./data.js";
+
+let texts = Data.Get().texts;
 
 export function Load(page = null){
     Main.UnloadPage();
@@ -43,6 +45,11 @@ function LoadPage(page = null, meta){
             break;
         default:
             Main.UpdateBackButton(Load);
+
+            let container = document.createElement("div");
+            container.classList.add("texts-container");
+            meta.container.append(container);
+
             Object.entries(texts[page]).forEach(entry => {
                 const [key, value] = entry;
                 let textElement = document.createElement("p");
@@ -50,8 +57,14 @@ function LoadPage(page = null, meta){
                 if(value[1]) textElement.classList.add("self");
                 textElement.innerHTML = value[0];
                 
-                meta.container.append(textElement);
+                container.append(textElement);
             });
+
+            ScrollTop(container);
             break;
     }
+}
+
+function ScrollTop(element){
+    element.scrollTop = element.scrollHeight;
 }
