@@ -239,6 +239,11 @@ html{
     overflow-y: auto;
     height: 100%;
     background-color: #334;
+
+    
+
+    
+    overflow-x: hidden;
 }
 
 .browser-bar{
@@ -291,6 +296,11 @@ html{
 }
 
 .browser-content{
+    width: 100%;
+    height: calc(100% - 52px);
+}
+
+.browser-content .no-internet{
     cursor: default;
     position: absolute;
 
@@ -304,11 +314,124 @@ html{
     font-size: 18px;
 }
 
-.browser-content i{
+.browser-content .no-internet i{
     margin-top: 30px;
     font-size: 150px;
     color: #000;
     opacity: 0.2;
+}
+
+.browser-menu{
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    top: 52px;
+
+    width: 200px;
+
+    color: #EEE;
+
+    background-color:#445;
+    border: 2px solid #556;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+    transform: translateX(calc(100% + 20px));
+    transition: transform 0.25s;
+}
+
+.browser-menu.menu-open{
+    transform: translateX(0);
+}
+
+.browser-menu ul, .browser-menu li{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.browser-menu ul > li{
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.1s;
+}
+
+.browser-menu ul > li.quit{
+    text-align: center;
+    color: #F33;
+}
+
+.browser-menu ul > li:hover{
+    background-color: #556;
+}
+
+.browser-menu ul > span.separator{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #556;
+}
+
+.browser-content .page-title{
+    display: block;
+    cursor: default;
+    color: #EEE;
+    font-size: 24px;
+
+    background-color: #11111A;
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.history{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.history-item{
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #EEE;
+    transition: background-color 0.1s;
+}
+
+.history-item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.history-item > span{
+    position: relative;
+    cursor: default;
+    text-align: right;
+    display: inline-block;
+    width: 70px;
+    padding: 5px;
+    padding-right: 10px;
+    color: #AAA;
+}
+
+.history-item > a{
+    position: relative;
+    color: #EEE;
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #445;
+}
+
+.history-date{
+    display: block;
+    width: 100%;
+    padding: 2px 5px;
+    text-align: center;
+    color: #EEE;
+    background-color: #445;
 }
 
 /* =======================================================================
@@ -318,4 +441,11 @@ html{
 .no-display{
     opacity: 0 !important;
     cursor: default;
+}
+
+.no-transition, .no-transition::before, .no-transition::after{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
 }

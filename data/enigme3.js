@@ -19,3 +19,21 @@ export let texts = {
         ["bonsoir2"]
     ]
 }
+
+export let browser = {
+    "history": [
+        {
+            "type": "date",
+            "text": "10 novembre 2021"
+        },
+        {
+            "time": "10:00PM",
+            "text": "YouTube",
+            "url": "https://www.youtube.com/"
+        },
+        {
+            "time": "9:59PM",
+            "text": "https://www.facebook.com/ 23123231232121213123"
+        }
+    ]
+}
