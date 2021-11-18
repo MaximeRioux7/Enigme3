@@ -29,15 +29,6 @@ export let texts = {
         ["ALLO??"],
         ["Si tu donnes pas de nouvelles d’ici 1h j’appelle la police."]
     ],
-    "&lt Anonyme &gt": [
-        ["Nous sommes heureux de bientôt accueillir un nouveau disciple."],
-        ["oui, votre discours était une merveille, une grandeur. j'ai senti une révélation en vous écoutant sur youtube"],
-        ["Ne t'en fais plus pour tes parents, on va s'occuper de toi."],
-        ["oui, depuis que j'ai accepté Dieu dans ma vie, j'ai compris que ma place est avec vous", true],
-        ["nLPDXXoNXRStW0ZR1UVfq172usfRXdbzuPeMy9d1kAk="],                                                                   // (Je t'attend à l'emplacement.) (nLPDXXoNXRStW0ZR1UVfq172usfRXdbzuPeMy9d1kAk=)
-        ["WruFb9PxdQmY0KUS0THRtDU6fHMDEnIzegxi0SyGVOjXykRoNVA7c91mGg1SJaKxgqsSc2e7KiRHxEp/ef8Gsg=="],                       // (On se rend du restaurant à l’église à pied.)(WruFb9PxdQmY0KUS0THRtDU6fHMDEnIzegxi0SyGVOjXykRoNVA7c91mGg1SJaKxgqsSc2e7KiRHxEp/ef8Gsg==)
-        ["QlpbR4OYQHkKk/njDdD4VXSW9ESX1d+q8KQT39R2rGzjjC02/m6/h0/wZXP8FKLcaCealkG1zTBVKL+9A9m3gA=="]                        // (Pas d'électroniques dans l'église.)(QlpbR4OYQHkKk/njDdD4VXSW9ESX1d+q8KQT39R2rGzjjC02/m6/h0/wZXP8FKLcaCealkG1zTBVKL+9A9m3gA==)
-    ],
     "Papa": [
         ["Hey, je sais que ça va pas fort entre toi et ta mère ces temps-ci, mais elle veut ton bien au fond."],
         ["Elle est juste stressée par son travail, elle fait pas exprès"],
@@ -90,6 +81,11 @@ export let browser = {
         {
             "time": "9:59PM",
             "text": "https://www.facebook.com/"
+        },
+        {
+            "time": "9:49PM",
+            "text": "Décrypter un message",
+            "url": "https://www.online-toolz.com/tools/text-encryption-decryption.php"
         }
     ]
 }
