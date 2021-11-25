@@ -209,6 +209,7 @@ html{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     padding: 10px;
+    padding-left: 48px;
 
     transition: background-color 0.1s;
 }
@@ -233,6 +234,65 @@ html{
     margin-right: 10px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.icon-text{
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    content: ' ';
+
+    background-color: #1AF;
+    border-radius: 50%;
+
+    transform: translate(-38px, -5px);
+}
+
+.icon-text.Maman{
+    background-color: #ABF;
+}
+
+.icon-text.Maman::after{
+    position: absolute;
+    display: block;
+    content: "M";
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-text.Papa::after{
+    position: absolute;
+    display: block;
+    content: "P";
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-text.Émilie{
+    background-color: #FAC;
+}
+
+.icon-text.Émilie::after{
+    position: absolute;
+    display: block;
+    content: "É";
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-text.Anonyme{
+    background-image: url("../img/Anonyme.jpg");
+    background-size: contain;
 }
 
 /* =======================================================================

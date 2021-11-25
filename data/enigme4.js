@@ -29,15 +29,6 @@ export let texts = {
         ["ALLO??"],
         ["Si tu donnes pas de nouvelles d’ici 1h j’appelle la police."]
     ],
-    "&lt Anonyme &gt": [
-        ["Nous sommes heureux de bientôt accueillir un nouveau disciple."],
-        ["oui, votre discours était une merveille, une grandeur. j'ai senti une révélation en vous écoutant sur youtube"],
-        ["Ne t'en fais plus pour tes parents, on va s'occuper de toi."],
-        ["oui, depuis que j'ai accepté Dieu dans ma vie, j'ai compris que ma place est avec vous", true],
-        ["nLPDXXoNXRStW0ZR1UVfq172usfRXdbzuPeMy9d1kAk="],                                                                   // (Je t'attend à l'emplacement.) (nLPDXXoNXRStW0ZR1UVfq172usfRXdbzuPeMy9d1kAk=)
-        ["WruFb9PxdQmY0KUS0THRtDU6fHMDEnIzegxi0SyGVOjXykRoNVA7c91mGg1SJaKxgqsSc2e7KiRHxEp/ef8Gsg=="],                       // (On se rend du restaurant à l’église à pied.)(WruFb9PxdQmY0KUS0THRtDU6fHMDEnIzegxi0SyGVOjXykRoNVA7c91mGg1SJaKxgqsSc2e7KiRHxEp/ef8Gsg==)
-        ["QlpbR4OYQHkKk/njDdD4VXSW9ESX1d+q8KQT39R2rGzjjC02/m6/h0/wZXP8FKLcaCealkG1zTBVKL+9A9m3gA=="]                        // (Pas d'électroniques dans l'église.)(QlpbR4OYQHkKk/njDdD4VXSW9ESX1d+q8KQT39R2rGzjjC02/m6/h0/wZXP8FKLcaCealkG1zTBVKL+9A9m3gA==)
-    ],
     "Papa": [
         ["Hey, je sais que ça va pas fort entre toi et ta mère ces temps-ci, mais elle veut ton bien au fond."],
         ["Elle est juste stressée par son travail, elle fait pas exprès"],
@@ -55,7 +46,6 @@ export let texts = {
         ["On est vraiment inquiets, peux tu répondre aussitôt que tu vois mon message?"],
         ["On est sur le bord de partir te chercher, j’espère qu’il ne t’est rien arrivé.."],
     ],
-
     "Émilie": [
         ["on se fait une soirée pizza vendredi?"],
         ["ouais cool!", true],
@@ -73,6 +63,22 @@ export let texts = {
         ["kes qu'y a?? t'es ou?"],
         ["omg t'es pas allée rencontrer un gars louche d'internet pour vrai?!"],
         ["j'appelle la police, j'espère qu'il tes rien arriver de grave..."]
+    ],
+    "Anonyme": [                                                                                                                      // &lt Anonyme &gt
+        ["Bonjour Alexandra, notre groupe est heureux de ton application."],
+        ["Nous t'invitons à prendre place lors de notre prochaine écoute publique."],
+        ["Sache que pour assurer la sécurité de nos membres, nous utilisons l'encryption Base32 pour nos messages importants."],
+        ["merci! je suis contente de pouvoir vous rejoindre", true],
+        ["je vais tout faire pour aller à votre prochaine séance", true],
+        ["Bonjour Alexandra, nous sommes heureux d'avoir fait l'expérience de ta personne et de bientôt accueillir une nouvelle disciple."],
+        ["oui, votre discours était une merveille, une grandeur! j'ai senti une révélation en vous écoutant sur youtube", true],
+        ["Ne t'en fais plus pour tes parents, on va bien s'occuper de toi."],
+        ["oui, depuis que j'ai accepté Dieu dans ma vie, j'ai compris que ma place est avec vous", true],
+        ["À partir de maintenant, cryptons nos messages de la manière que je t'ai décrite."],
+        ["Nous ne voudrions pas être dérangés lors de notre prochaine écoute."],
+        ["JJSSA5BHMF2HIZLOMQQMHIBANQTWK3LQNRQWGZLNMVXHILQ="],                                                                   // (Je t'attend à l'emplacement.) (nLPDXXoNXRStW0ZR1UVfq172usfRXdbzuPeMy9d1kAk=)
+        ["J5XCA43FEBZGK3TEEBSHKICSMVZXIYLVOJQW45BAGEYDQIGDUAQGZYUATHB2SZ3MNFZWKIGDUAQHA2LFMQXA===="],                           // (On se rend du restaurant à l’église à pied.)(WruFb9PxdQmY0KUS0THRtDU6fHMDEnIzegxi0SyGVOjXykRoNVA7c91mGg1SJaKxgqsSc2e7KiRHxEp/ef8Gsg==)
+        ["KBQXGIDEE7B2S3DFMN2HE33ONFYXKZJAMRQW44ZANQT4HKLHNRUXGZI="]                                                            // (Pas d'électroniques dans l'église.)(QlpbR4OYQHkKk/njDdD4VXSW9ESX1d+q8KQT39R2rGzjjC02/m6/h0/wZXP8FKLcaCealkG1zTBVKL+9A9m3gA==)
     ]
 }
 
@@ -101,8 +107,22 @@ export let browser = {
         },
         {
             "time": "9:49PM",
-            "text": "Comment décrypter ou encrypter un message ou du texte",
-            "url": "https://www.online-toolz.com/tools/text-encryption-decryption.php"
+            "text": "Comment lire Base32",
+            "url": "https://emn178.github.io/online-tools/base32_decode.html"
+        },
+        {
+            "time": "9:34PM",
+            "text": "petits lapins - Recherche web",
+            "url": "https://www.google.com/search?q=petits+lapins&tbm=isch&ved=2ahUKEwi7-tn6vrL0AhWkrHIEHTUWCm4Q2-cCegQIABAA&oq=petits+lapins&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoECAAQQzoFCAAQgAQ6BggAEAcQHjoICAAQCBAHEB5QygVYiRBg5xFoAXAAeACAAVmIAacFkgEBOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=PfieYfvnFqTZytMPtayo8AY&bih=959&biw=1411"
+        },
+        {
+            "type": "date",
+            "text": "9 novembre 2021"
+        },
+        {
+            "time": "8:26PM",
+            "text": "Rejoindre le groupe culte de la paix",
+            "url": "https://google.ca/404"
         }
     ]
 }

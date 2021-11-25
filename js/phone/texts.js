@@ -33,7 +33,8 @@ function LoadPage(page = null, meta){
                 const [key, value] = entry;
                 let textElement = document.createElement("div");
                 textElement.classList.add("recipient");
-                textElement.innerHTML = key;
+                textElement.innerHTML += `<span class="icon-text ${key}"></span>`;
+                textElement.innerHTML += key;
 
                 textElement.addEventListener("click", ()=>{
                     meta.container.innerHTML = "";

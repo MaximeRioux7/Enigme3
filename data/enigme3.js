@@ -68,7 +68,7 @@ export let texts = {
 }
 
 export let browser = {
-    "history": [ 
+    "history": [
         {
             "type": "date",
             "text": "10 novembre 2021"
@@ -84,8 +84,22 @@ export let browser = {
         },
         {
             "time": "9:49PM",
-            "text": "Comment décrypter ou encrypter un message ou du texte",
-            "url": "https://www.online-toolz.com/tools/text-encryption-decryption.php"
+            "text": "Comment lire Base32",
+            "url": "https://emn178.github.io/online-tools/base32_decode.html"
+        },
+        {
+            "time": "9:34PM",
+            "text": "petits lapins - Recherche web",
+            "url": "https://www.google.com/search?q=petits+lapins&tbm=isch&ved=2ahUKEwi7-tn6vrL0AhWkrHIEHTUWCm4Q2-cCegQIABAA&oq=petits+lapins&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoECAAQQzoFCAAQgAQ6BggAEAcQHjoICAAQCBAHEB5QygVYiRBg5xFoAXAAeACAAVmIAacFkgEBOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=PfieYfvnFqTZytMPtayo8AY&bih=959&biw=1411"
+        },
+        {
+            "type": "date",
+            "text": "9 novembre 2021"
+        },
+        {
+            "time": "8:26PM",
+            "text": "Rejoindre le groupe culte de la paix",
+            "url": "https://google.ca/404"
         }
     ]
 }
