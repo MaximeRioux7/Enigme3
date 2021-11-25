@@ -80,15 +80,24 @@ export let browser = {
     "history": [
         {
             "type": "date",
+            "text": "11 novembre 2021"
+        },
+        {
+            "time": "10:07PM",
+            "text": "https://www.facebook.com/profile.php?id=100074804393013"
+        },
+        {
+            "type": "date",
             "text": "10 novembre 2021"
         },
         {
-            "time": "10:00PM",
-            "text": "https://www.youtube.com/"
+            "time": "10:06PM",
+            "text": "chaton - Recherche web",
+            "url": "https://www.google.com/search?q=chaton&sxsrf=AOaemvL7ACm3Ohuebui-EF9VzVQ32_yGXQ:1637799070208&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiR5av-nLL0AhXNSTABHe0SCxYQ_AUoAXoECAIQAw&cshid=1637799084990860&biw=1411&bih=959&dpr=1"
         },
         {
-            "time": "9:59PM",
-            "text": "https://www.facebook.com/"
+            "time": "9:58PM",
+            "text": "https://www.youtube.com/results?search_query=cute+kitty"
         },
         {
             "time": "9:49PM",
