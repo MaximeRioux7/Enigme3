@@ -99,7 +99,7 @@ export let browser = {
         {
             "time": "10:06PM",
             "text": "chaton - Recherche web",
-            "url": "https://www.google.com/search?q=chaton&sxsrf=AOaemvL7ACm3Ohuebui-EF9VzVQ32_yGXQ:1637799070208&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiR5av-nLL0AhXNSTABHe0SCxYQ_AUoAXoECAIQAw&cshid=1637799084990860&biw=1411&bih=959&dpr=1"
+            "url": "https://www.google.com/search?q=chaton&tbm=isch"
         },
         {
             "time": "9:58PM",
@@ -113,7 +113,7 @@ export let browser = {
         {
             "time": "9:34PM",
             "text": "petits lapins - Recherche web",
-            "url": "https://www.google.com/search?q=petits+lapins&tbm=isch&ved=2ahUKEwi7-tn6vrL0AhWkrHIEHTUWCm4Q2-cCegQIABAA&oq=petits+lapins&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoECAAQQzoFCAAQgAQ6BggAEAcQHjoICAAQCBAHEB5QygVYiRBg5xFoAXAAeACAAVmIAacFkgEBOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=PfieYfvnFqTZytMPtayo8AY&bih=959&biw=1411"
+            "url": "https://www.google.com/search?q=petits+lapins&tbm=isch"
         },
         {
             "type": "date",
